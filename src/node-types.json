@@ -465,6 +465,14 @@
           "named": true
         },
         {
+          "type": "shift_left_equal",
+          "named": true
+        },
+        {
+          "type": "shift_right_equal",
+          "named": true
+        },
+        {
           "type": "times_equal",
           "named": true
         },
@@ -1466,10 +1474,6 @@
       "required": true,
       "types": [
         {
-          "type": "additive_expression",
-          "named": true
-        },
-        {
           "type": "equal_equal",
           "named": true
         },
@@ -1491,6 +1495,10 @@
         },
         {
           "type": "not_equal",
+          "named": true
+        },
+        {
+          "type": "shift_expression",
           "named": true
         }
       ]
@@ -1564,6 +1572,33 @@
         },
         {
           "type": "sampler_comparison",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "shift_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "additive_expression",
+          "named": true
+        },
+        {
+          "type": "shift_left",
+          "named": true
+        },
+        {
+          "type": "shift_right",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
           "named": true
         }
       ]
@@ -2636,10 +2671,6 @@
     "named": false
   },
   {
-    "type": "centroid",
-    "named": false
-  },
-  {
     "type": "char",
     "named": false
   },
@@ -2833,10 +2864,6 @@
   },
   {
     "type": "fixed",
-    "named": false
-  },
-  {
-    "type": "flat",
     "named": false
   },
   {
@@ -3189,10 +3216,6 @@
   },
   {
     "type": "lineadj",
-    "named": false
-  },
-  {
-    "type": "linear",
     "named": false
   },
   {
@@ -3576,10 +3599,6 @@
     "named": false
   },
   {
-    "type": "sample",
-    "named": false
-  },
-  {
     "type": "sampler",
     "named": true
   },
@@ -3682,6 +3701,22 @@
   {
     "type": "shared",
     "named": false
+  },
+  {
+    "type": "shift_left",
+    "named": true
+  },
+  {
+    "type": "shift_left_equal",
+    "named": true
+  },
+  {
+    "type": "shift_right",
+    "named": true
+  },
+  {
+    "type": "shift_right_equal",
+    "named": true
   },
   {
     "type": "signed",

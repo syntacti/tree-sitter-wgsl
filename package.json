@@ -13,7 +13,7 @@
         "url": "https://github.com/mehmetoguzderin/tree-sitter-wgsl.git"
     },
     "dependencies": {
-        "nan": "^2.15.0"
+        "nan": "^2.16.0"
     },
     "devDependencies": {
         "tree-sitter-cli": "^0.20.6"
